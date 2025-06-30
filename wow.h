@@ -1,13 +1,13 @@
 /*
- * wow.h - Compilation attribute macros for better code optimization and safety
+ * wow.h | Compilation attribute macros for better code optimization and safety
  *
  * This header defines macros to help with compiler-specific attributes,
  * such as symbol visibility, function inlining, deprecation warnings,
  * and other function or variable annotations to improve portability
  * and code clarity.
  *
- * Author: cpixou
- * Date: 2025
+ * Author : cpixou
+ * Date   : 2025
  */
 
 #ifndef WOW_H
@@ -60,7 +60,7 @@
 #define aligned(n) __attribute__((aligned(n)))
 #define section(n) __attribute__((section(n)))
 
-#define reserved(id, n) unsigned char res##id : n
-#define reserved8(id, n) unsigned char res8##id[n]
+#define resbit(id, n) unsigned char bit##id : n
+#define resbyt(id, n) unsigned char byt##id[n]
 
 #endif
