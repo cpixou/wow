@@ -1,5 +1,17 @@
-#ifndef libwow_h
-#define libwow_h
+/*
+ * wow.h - Compilation attribute macros for better code optimization and safety
+ *
+ * This header defines macros to help with compiler-specific attributes,
+ * such as symbol visibility, function inlining, deprecation warnings,
+ * and other function or variable annotations to improve portability
+ * and code clarity.
+ *
+ * Author: cpixou
+ * Date: 2025
+ */
+
+#ifndef WOW_H
+#define WOW_H
 
 #if defined(_win32) || defined(__cygwin__)
 #define export __declspec(dllexport)
